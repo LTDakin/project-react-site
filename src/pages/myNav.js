@@ -23,6 +23,7 @@ class myNav extends React.Component {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/Chracteristics">Chracteristics</Nav.Link>
             <Nav.Link href="#pricing">Syntax</Nav.Link>
+            <Nav.Link href="/History">History</Nav.Link>
           </Nav>
         </Navbar>
       </div>

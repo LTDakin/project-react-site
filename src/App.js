@@ -17,12 +17,12 @@ function App() {
     <div className="App">
       <Navbar />
       <Home />
-      <History />
       <BrowserRouter>
         <div className="container">
           <Switch>
             <Route path='/' component={Home} exact />
             <Route path='/Chracteristics' component={Character} exact />
+            <Route path='/History' component={History} exact />
             <Route path='/Other' component={Home} exact />
           </Switch>
         </div>
