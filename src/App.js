@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 /**
  * Main App loading area, organize pages here, links from myNav are handled here, this is where the switch nav router goes
+ * 
  */
 function App() {
   return (

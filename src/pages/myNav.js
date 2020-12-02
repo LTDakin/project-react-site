@@ -3,6 +3,7 @@ import { Navbar, Form, Nav, Button, FormControl } from 'react-bootstrap'
 import logo from '../images/JavaScript-logo.png'
 /**
  * NavBar component for all pages, stuff needs done, research reactDom Router and figure out how to link between pages
+ * 
  */
 class myNav extends React.Component {
   render() {
