@@ -3,7 +3,6 @@
  */
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../style/history.css';
 import { Accordion, Card, Jumbotron, Button, Image, Table} from 'react-bootstrap'
 import Alert from 'react-bootstrap/Alert'
 import img1 from '../images/History.png'
