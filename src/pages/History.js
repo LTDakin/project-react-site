@@ -5,9 +5,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/history.css';
-import { Accordion, Card, Jumbotron, Button, Image} from 'react-bootstrap'
+import { Accordion, Card, Jumbotron, Button, Image, Table} from 'react-bootstrap'
 import Alert from 'react-bootstrap/Alert'
-import img1 from '../images/history.png'
+import img1 from '../images/History.png'
 import InfoSec from '../components/InfoSec'
 class History extends React.Component{
     toggleTable() {
@@ -49,12 +49,15 @@ class History extends React.Component{
             </p>
             
             <div id = "myDIV" style={{display:"none"}}>
-                    <table>
+                    <Table striped bordered hover>
+                    <thead>
                     <tr>
                         <th>Ver</th>
                         <th>Year</th> 
                         <th>Description</th>
                     </tr>
+                    </thead>
+                    <tbody>
                     <tr>
                         <td>ES5</td>
                         <td>2009</td>
@@ -117,7 +120,8 @@ class History extends React.Component{
                             </ul> 
                         </td>
                     </tr>
-                    </table>
+                    </tbody>
+                    </Table>
                     <p></p>
                     <p>*Note: This table was displayed using JavaScript</p>
                 </div>
