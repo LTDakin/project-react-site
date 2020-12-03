@@ -5,7 +5,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Accordion, Card, Jumbotron, Button, Image, Table} from 'react-bootstrap'
 import Alert from 'react-bootstrap/Alert'
-import img1 from '../images/History.png'
+import img1 from '../images/History.svg'
 import InfoSec from '../components/InfoSec'
 class History extends React.Component{
     toggleTable() {
@@ -47,7 +47,7 @@ class History extends React.Component{
             </p>
             
             <div id = "myDIV" style={{display:"none"}}>
-                    <Table striped bordered hover>
+                    <Table striped bordered hover variant="warning">
                     <thead>
                     <tr>
                         <th>Ver</th>
@@ -142,7 +142,7 @@ class History extends React.Component{
                 </Alert>
 
 
-            <Accordion defaultActiveKey="0">
+            <Accordion defaultActiveKey="1">
             <Card>
                 <Accordion.Toggle as={Card.Header} eventKey="0">
                 References

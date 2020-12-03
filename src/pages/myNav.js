@@ -25,6 +25,8 @@ class myNav extends React.Component {
             <Nav.Link href="/Chracteristics">Chracteristics</Nav.Link>
             <Nav.Link href="#pricing">Syntax</Nav.Link>
             <Nav.Link href="/History">History</Nav.Link>
+            <Nav.Link href="/ParadigmAndTyping">Paradigm/Typing</Nav.Link>
+            <Nav.Link href="/ControlStructures">Control Structures</Nav.Link>
           </Nav>
         </Navbar>
       </div>
