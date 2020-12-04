@@ -79,9 +79,9 @@ class ControlStructures extends React.Component{
             
             <div id = "buttonGroup" style={styles.center}>
             <ButtonGroup aria-label="Basic example">
-            <Button variant="info" onClick={() => this.toggleTable("myDIV1")}>Selection</Button>
-            <Button variant="info" onClick={() => this.toggleTable("myDIV2")}>Repetition</Button>
-            <Button variant="info" onClick={() => this.toggleTable("myDIV3")}>Additional</Button>
+            <Button variant="primary" onClick={() => this.toggleTable("myDIV1")}>Selection</Button>
+            <Button variant="primary" onClick={() => this.toggleTable("myDIV2")}>Repetition</Button>
+            <Button variant="primary" onClick={() => this.toggleTable("myDIV3")}>Additional</Button>
             </ButtonGroup>
             </div>
 
@@ -215,7 +215,7 @@ class ControlStructures extends React.Component{
         <Accordion defaultActiveKey="1">
             <Card>
                 <Accordion.Toggle as={Card.Header} eventKey="0">
-                Example of Paradigm
+                Example of Control Flow in JS
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
                 <Card.Body>

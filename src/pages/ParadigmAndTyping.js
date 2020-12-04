@@ -1,6 +1,4 @@
-/**
- * testing branch..
- */
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Accordion, Card, Jumbotron, Button, Image, Table} from 'react-bootstrap'
