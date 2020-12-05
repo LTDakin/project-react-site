@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Carousel, Image, Container } from 'react-bootstrap'
-import img1 from '../images/Enviorment.svg'
-import img2 from '../images/Frameworks.svg'
-import img3 from '../images/React.svg'
+import { Jumbotron } from 'react-bootstrap'
+import welcome from '../images/Welcome.svg'
 import InfoSec from '../components/InfoSec'
 
 /**
@@ -12,8 +10,15 @@ import InfoSec from '../components/InfoSec'
 class Home extends React.Component {
   render() {
     return (
+      <Jumbotron>
       <div className="Home">
+        <InfoSec 
+          header="Welcome to our page about Javascript for Part 3" 
+          description="This website was made by us, from scratch using JavaScript, React, and JSX"
+          image={welcome}
+        />
       </div>
+      </Jumbotron>
     );
   }
 }

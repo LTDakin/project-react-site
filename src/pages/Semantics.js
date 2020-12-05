@@ -4,7 +4,7 @@ import { Accordion, Card, Jumbotron, Button, Image,Badge} from 'react-bootstrap'
 import img1 from '../images/semantics.svg'
 import InfoSec from '../components/InfoSec'
 class Semantics extends React.Component{
- 
+ //Renders the Semantics page
     render() {
         return (
         <div className="Semantics">

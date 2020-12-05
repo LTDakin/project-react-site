@@ -30,6 +30,7 @@ class myNav extends React.Component {
             <Nav.Link href="/Chracteristics">Characteristics</Nav.Link>
             <Nav.Link href="SupportForDataAbstractions">Data Abstractions</Nav.Link>
             <Nav.Link href="Syntax">Syntax</Nav.Link>
+            <Nav.Link href='/ThreeDemo'>Three.js Demo</Nav.Link>
           </Nav>
         </Navbar>
       </div>

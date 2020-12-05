@@ -7,7 +7,7 @@ import img2 from '../images/exType.PNG'
 import img3 from '../images/exParadigm.PNG'
 import InfoSec from '../components/InfoSec'
 class Syntax extends React.Component{ 
-
+//Renders the Syntax page
     render() {
         return (
         <div className="Syntax">

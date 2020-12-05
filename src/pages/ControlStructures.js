@@ -8,13 +8,17 @@ import Alert from 'react-bootstrap/Alert'
 import img1 from '../images/Control_flow.svg'
 import img2 from '../images/exControl.PNG'
 import InfoSec from '../components/InfoSec'
-
+/**
+ * Var to store the styles of a component that can be edited and input
+ */
 var styles = {
     center: {
       textAlign: 'center'
     },
 };
-
+/**
+ * Demo class to test controlling styles using react state and controls
+ */
 class ControlStructures extends React.Component{
 
     

@@ -8,7 +8,7 @@ import InfoSec from '../components/InfoSec'
 
 class SupportForDataAbstractions extends React.Component{
  
-  
+  //Renders the Data Abstractions page
     render() {
         return (
         <div className="SupportForDataAbstractions">

@@ -8,7 +8,9 @@ import img2 from '../images/exType.PNG'
 import img3 from '../images/exParadigm.PNG'
 import InfoSec from '../components/InfoSec'
 class ParadigmAndTyping extends React.Component{
-
+    /**
+     * function to handle the display styles for example 1
+     */
     example1() {
         var y = document.getElementById("example1");
         if (y.style.display === "none") {
@@ -23,7 +25,9 @@ class ParadigmAndTyping extends React.Component{
         }
         document.getElementById("example1").innerHTML = person.name + "<br>" + person.DOB + "<br>" + person.age;
     }  
-
+    /**
+     * function to handle the display styles for example 2
+     */
     example2() {
         var y = document.getElementById("example2");
         if (y.style.display === "none") {
@@ -35,7 +39,9 @@ class ParadigmAndTyping extends React.Component{
         var str = "Hello World!";
         document.getElementById("example2").innerHTML = str+ "<br>" + x;
     }   
-
+    /**
+     * Renders the paradigm and typing page as well as controls for the styled components
+     */
     render() {
         return (
         <div className="History">

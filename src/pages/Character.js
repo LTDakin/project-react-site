@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Accordion, Card, Jumbotron, Button } from 'react-bootstrap'
-
+/**
+ * Page about the different characteristics of Javascript using JSX
+ */
 class Character extends React.Component {
   render() {
     return (
