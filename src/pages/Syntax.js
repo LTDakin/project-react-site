@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Accordion, Card, Jumbotron, Button, Image, Table} from 'react-bootstrap'
+import { Badge, Accordion, Card, Jumbotron, Button, Image, Table, ListGroup} from 'react-bootstrap'
 import Alert from 'react-bootstrap/Alert'
 import img1 from '../images/paradigm.svg'
 import img2 from '../images/exType.PNG'
@@ -13,23 +13,28 @@ class Syntax extends React.Component{
         <div className="Syntax">
             <header className = "Syntax"></header>
             <Jumbotron>
-          <h1>NOT DONE Syntax</h1>
-          <p>
+            <h1>
+            Syntax <Badge variant="secondary">JS</Badge>
+            </h1>
+          <ListGroup>
+          <ListGroup.Item>
             Appealing Syntax Choices:
             A syntax choice that I think is very useful is JavaScripts use of the fat array =&gt;. This operator
             provides a concise syntax for writing function expressions and is used a lot in programs for
             small functions. The =&gt; arrow was introduced in ES6 and allows us to forgo using the function
             or return keywords.
-          </p>
-          <p>
+          </ListGroup.Item>
+          <ListGroup.Item>
             This format is very appealing and makes code writing a lot shorter for small functions as well as
             still being very readable and I think it was a good choice for the representation of function
             shortening.
-          </p>
+          </ListGroup.Item>
+          </ListGroup>
         </Jumbotron>
             <Alert variant="dark">
             <Alert.Heading>The Future </Alert.Heading>
-            <p>
+            <ListGroup>
+          <ListGroup.Item>
             A syntax choice that I found could be a little confusing would be the way that JavaScript handles
             arguments. In it's current form when you pass arguments to a function like function(“hello”,
             “world”, “goodbye”, “world”) JavaScripts allows you to access the arguments in an array-like
@@ -41,7 +46,8 @@ class Syntax extends React.Component{
             array. I think a good way to change this would be to allow JavaScript to support referencing
             variables by a name as well as in the arguments array format. This way you can use the best of
             both worlds, readability and the ability to iterate over n arguments.
-            </p>
+          </ListGroup.Item>
+          </ListGroup>
             <hr />
             <p className="mb-0">
             Another syntax idea that Javascript employs that I find messy is the way it treats booleans and
