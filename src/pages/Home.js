@@ -1,13 +1,25 @@
+/** File: Home.js
+ * Author: Lloyd Dakin, Fernando Ruiz
+ * Course: CSc 372
+ * Assignment: Final Porject part 3
+ * Instructor: Dr. McCann
+ * TAs: Josh, Tito
+ * Due Date: 12/7
+ * Description: The following class welcomes the user to our website with a small greeting
+ * and description of our webiste. It is used to represent a typical home/welcome page.
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Jumbotron } from 'react-bootstrap'
 import welcome from '../images/Welcome.svg'
 import InfoSec from '../components/InfoSec'
 
-/**
- * Home page, should introduce us maybe? introduce language? maybe we can make it like a project looking website
- */
 class Home extends React.Component {
+  
+  /**
+   * Renders the page as well as controls for the styled components
+   */
   render() {
     return (
       <Jumbotron>

@@ -1,3 +1,13 @@
+ /** File: ThreeDemo.js
+ * Author: Lloyd Dakin, Fernando Ruiz
+ * Course: CSc 372
+ * Assignment: Final Porject part 3
+ * Instructor: Dr. McCann
+ * TAs: Josh, Tito
+ * Due Date: 12/7
+ * Description: The following is used to create a 3D interactive react object component.
+ */
+
 import React from 'react';
 import { Dropdown } from 'react-bootstrap'
 import { Canvas } from 'react-three-fiber';

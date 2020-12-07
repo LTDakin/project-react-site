@@ -1,13 +1,52 @@
+/** File: Character.js
+ * Author: Lloyd Dakin, Fernando Ruiz
+ * Course: CSc 372
+ * Assignment: Final Porject part 3
+ * Instructor: Dr. McCann
+ * TAs: Josh, Tito
+ * Due Date: 12/7
+ * Description: The following class displays JavaScript Desirable Characteristics from our Language Study,
+ * using JSX.
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Accordion, Card, Jumbotron, Button } from 'react-bootstrap'
-/**
- * Page about the different characteristics of Javascript using JSX
- */
+import { Accordion, Card, Jumbotron, Button, Image} from 'react-bootstrap'
+import img2 from '../images/exChar1.PNG'
+import img1 from '../images/exChar2.PNG'
+
 class Character extends React.Component {
+
+    /**
+     * The following function is used as an example of generality, with JavaScript's 
+     * equals operator, which performs a comparison using type coercion. The example 
+     * is displayed on the webpage and this funtion is used to toggle the display of its output.
+     */
+    example() {
+      //toggle display
+      var ex = document.getElementById("example");
+      if (ex.style.display === "none") {
+          ex.style.display = "block";
+      } else {
+          ex.style.display = "none";
+      }
+
+      //For example:
+      var testOne  = "" == 0;    //true
+      var testTwo  =  0 == "0";  //true
+      //But avoids this possible special case, since 
+      //both are strings there is no need for type coercion.
+      var testThree = "" == "0"  //false 
+
+      document.getElementById("example").innerHTML = testOne + ", " +
+                                                    testTwo + ", and " +
+                                                    testThree;
+  } 
+
   render() {
     return (
       <div className="Character">
+        
         <Jumbotron>
           <h1>Desirable Language Characteristics</h1>
           <p>
@@ -16,6 +55,7 @@ class Character extends React.Component {
             ideas! 
           </p>
         </Jumbotron>
+
         <Accordion defaultActiveKey="0">
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="0">
@@ -40,7 +80,15 @@ class Character extends React.Component {
               <Card.Body>
                 Orthogonality being an aspect of regularity, can be observed with JavaScripts language construct function return.
                 For example, JS can return values of all data types including objects and functions, so it does not behave differently for different values.
+                <Image src={img1} thumbnail />
+                <p></p>
+                <hr />
                 Generality being an aspect of regularity, can also be observed in JavaScript with the equals operator, which performs a comparison using type coercion.
+                <Image src={img2} thumbnail />
+                <p></p>
+                <Button variant="info" onClick={this.example}>Show Output</Button>
+                <p></p>
+                <div id = "example" style={{display:"none"}}></div>
               </Card.Body>
             </Accordion.Collapse>
           </Card>
@@ -77,6 +125,7 @@ class Character extends React.Component {
             </Accordion.Collapse>
           </Card>
         </Accordion>
+        
       </div>
     );
   }

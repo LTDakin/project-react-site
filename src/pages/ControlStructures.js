@@ -1,6 +1,14 @@
-/**
- * testing branch..
+/** File: ControlStructures.js
+ * Author: Lloyd Dakin, Fernando Ruiz
+ * Course: CSc 372
+ * Assignment: Final Porject part 3
+ * Instructor: Dr. McCann
+ * TAs: Josh, Tito
+ * Due Date: 12/7
+ * Description: The following class displays JavaScript Control Structures from our Language Study.
+ * It also features interactive javascript output examples.
  */
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Accordion, Card, Jumbotron, Button, Image, Table, ButtonGroup} from 'react-bootstrap'
@@ -8,6 +16,7 @@ import Alert from 'react-bootstrap/Alert'
 import img1 from '../images/Control_flow.svg'
 import img2 from '../images/exControl.PNG'
 import InfoSec from '../components/InfoSec'
+
 /**
  * Var to store the styles of a component that can be edited and input
  */
@@ -16,12 +25,15 @@ var styles = {
       textAlign: 'center'
     },
 };
-/**
- * Demo class to test controlling styles using react state and controls
- */
-class ControlStructures extends React.Component{
 
+class ControlStructures extends React.Component{
     
+    /**
+     * The following function is used to demo control flow in JavaScript. It 
+     * present a user with the example and they can toggle the diplsy of the control flows
+     * output to see how control flow operate sin JS. The div "demo" is used to disply the 
+     * example output.
+     */
     demo() {
         var y = document.getElementById("demo");
         if (y.style.display === "none") {
@@ -43,13 +55,21 @@ class ControlStructures extends React.Component{
     } 
 
 
+    /**
+     * The following function uses control flow to manage multiple table displays
+     * depending on button press. Only one table is displayed at a time, the param X
+     * is used to toggole the passed in param myDiv and set the other div styles
+     * to none so that they are not displayed.
+     */
     toggleTable(myDiv) {
         var div1 = document.getElementById("myDIV1");
         var div2 = document.getElementById("myDIV2");
         var div3 = document.getElementById("myDIV3");
 
+        //div to display/undisplay
         var x = document.getElementById(myDiv);
 
+        //set all others to none
         if (myDiv == "myDIV1") {
             div2.style.display = "none";
             div3.style.display = "none";
@@ -61,6 +81,7 @@ class ControlStructures extends React.Component{
             div2.style.display = "none";
         }
 
+        //toggle passe din div basedon button press
         if (x.style.display === "none") {
             x.style.display = "block";
         } else {
@@ -79,8 +100,9 @@ class ControlStructures extends React.Component{
             description="Control flow in JavaScript can be managed by the following:" 
             image={img1}
             />
-            <p></p>
-            
+            <p></p> 
+
+            {/* Tables to display using fcn toggleTable*/}
             <div id = "buttonGroup" style={styles.center}>
             <ButtonGroup aria-label="Basic example">
             <Button variant="primary" onClick={() => this.toggleTable("myDIV1")}>Selection</Button>
@@ -91,6 +113,7 @@ class ControlStructures extends React.Component{
 
             <p></p>
 
+            {/*Divs to display below*/}
             <div id = "myDIV1" style={{display:"none"}}>
                 <Table striped bordered hover variant="info">
                 <thead>
@@ -216,6 +239,7 @@ class ControlStructures extends React.Component{
             </tbody>
             </Table>
         </div>
+
         <Accordion defaultActiveKey="1">
             <Card>
                 <Accordion.Toggle as={Card.Header} eventKey="0">
@@ -234,8 +258,8 @@ class ControlStructures extends React.Component{
             </Card>
             </Accordion>
         </Jumbotron>
+
         </div>
-        
         );
     }
 }

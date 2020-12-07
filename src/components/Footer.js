@@ -1,9 +1,18 @@
+/** File: Footer.js
+ * Author: Lloyd Dakin, Fernando Ruiz
+ * Course: CSc 372
+ * Assignment: Final Porject part 3
+ * Instructor: Dr. McCann
+ * TAs: Josh, Tito
+ * Due Date: 12/7
+ * Description: The following class creates the footer to be dispalyed at 
+ * the bottom of the webpage.
+ */
+
 import React from 'react';
 import { Row,Col, Container } from 'react-bootstrap'
 import logo from '../images/JavaScript-logo.png'
-/**
- * NavBar component for all pages, stuff needs done, research reactDom Router and figure out how to link between pages
- */
+
 class Footer extends React.Component {
   render() {
     return (

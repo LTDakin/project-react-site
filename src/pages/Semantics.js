@@ -1,10 +1,22 @@
+/** File: Semantics.js
+ * Author: Lloyd Dakin, Fernando Ruiz
+ * Course: CSc 372
+ * Assignment: Final Porject part 3
+ * Instructor: Dr. McCann
+ * TAs: Josh, Tito
+ * Due Date: 12/7
+ * Description: The following class displays JavaScript Semantics from our Language Study.
+ */
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Accordion, Card, Jumbotron, Button, Image,Badge} from 'react-bootstrap';
 import img1 from '../images/semantics.svg'
 import InfoSec from '../components/InfoSec'
+
 class Semantics extends React.Component{
- //Renders the Semantics page
+
+    //Renders the Semantics page
     render() {
         return (
         <div className="Semantics">
@@ -14,12 +26,15 @@ class Semantics extends React.Component{
             <h1>
             Semantics <Badge variant="secondary">JS</Badge>
             </h1>
+
           <InfoSec 
             header="" 
             description="" 
             image={img1}
             />
+
           <p></p>
+
         <Accordion defaultActiveKey="0">
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="0">
@@ -33,6 +48,7 @@ class Semantics extends React.Component{
               </Card.Body>
             </Accordion.Collapse>
           </Card>
+
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="1">
             Constants
@@ -47,6 +63,7 @@ class Semantics extends React.Component{
               </Card.Body>
             </Accordion.Collapse>
           </Card>
+
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="2">
               Storage Collection
@@ -59,6 +76,7 @@ class Semantics extends React.Component{
               </Card.Body>
             </Accordion.Collapse>
           </Card>
+
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="3">
             Garbage Collection
@@ -75,8 +93,10 @@ class Semantics extends React.Component{
               </Card.Body>
             </Accordion.Collapse>
           </Card>
+
         </Accordion>
         </Jumbotron>
+
         </div>
         );
     }

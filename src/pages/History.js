@@ -1,17 +1,26 @@
-/**
- * testing branch..
+/** File: History.js
+ * Author: Lloyd Dakin, Fernando Ruiz
+ * Course: CSc 372
+ * Assignment: Final Porject part 3
+ * Instructor: Dr. McCann
+ * TAs: Josh, Tito
+ * Due Date: 12/7
+ * Description: The following class displays JavaScript History from our Language Study.
  */
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Accordion, Card, Jumbotron, Button, Image, Table } from 'react-bootstrap'
 import Alert from 'react-bootstrap/Alert'
 import img1 from '../images/History.svg'
 import InfoSec from '../components/InfoSec'
-/**
- * Page for the history of Javascript
- */
+
 class History extends React.Component {
-    //Function to toggle table, called by the Toggle Table Button component
+
+    /**
+     * The following function toggles table display using JS control flow to set
+     * the display of the div accordingly based off button pressed.
+     */
     toggleTable() {
         var x = document.getElementById("myDIV");
         if (x.style.display === "none") {
@@ -20,6 +29,7 @@ class History extends React.Component {
             x.style.display = "none";
         }
     }
+
     //Renders the history component using JSX
     render() {
         return (
@@ -30,26 +40,27 @@ class History extends React.Component {
                     <InfoSec
                         header="History of JS"
                         description="JavaScript, originally named Mocha, was created by Brendan Eich in 1995 at Netscape
-            Communications. In response to Microsoft’s Internet Explorer project, the platform Netscape
-            partnered with the creators of Java at Sun Microsystems. Following the hype of Java, they
-            decided to propose Mocha as a companion language to Java, changing the name to Javascript as
-            a marketing ploy to gain acceptance. Its marketing was short-lived in response to its
-            performance, and it became considered as UI glue by Java developers. However, JS acting as
-            glue is what the internet needed to flourish. JavaScript allowed programmers to react to events
-            and construct interactive components, which made it rise in popularity to become known as the
-            lingua franca (common language) of the web."
+                        Communications. In response to Microsoft’s Internet Explorer project, the platform Netscape
+                        partnered with the creators of Java at Sun Microsystems. Following the hype of Java, they
+                        decided to propose Mocha as a companion language to Java, changing the name to Javascript as
+                        a marketing ploy to gain acceptance. Its marketing was short-lived in response to its
+                        performance, and it became considered as UI glue by Java developers. However, JS acting as
+                        glue is what the internet needed to flourish. JavaScript allowed programmers to react to events
+                        and construct interactive components, which made it rise in popularity to become known as the
+                        lingua franca (common language) of the web."
                         image={img1}
                     />
                     <p></p>
                     <p>
                         In 1997, language specification became managed and maintained by European Computer
                         Manufacturers Association. Major additions to the language are summarized below...
-            </p>
+                    </p>
 
                     <p>
                         <Button variant="info" onClick={this.toggleTable}>Show Table</Button>
                     </p>
 
+                    {/* Java Table Style set to none to hide */}
                     <div id="myDIV" style={{ display: "none" }}>
                         <Table striped bordered hover variant="warning">
                             <thead>
@@ -145,7 +156,6 @@ class History extends React.Component {
                 </p>
                 </Alert>
 
-
                 <Accordion defaultActiveKey="1">
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="0">
@@ -164,6 +174,7 @@ class History extends React.Component {
                         </Accordion.Collapse>
                     </Card>
                 </Accordion>
+
             </div>
         );
     }
